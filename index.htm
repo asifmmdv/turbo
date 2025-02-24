@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Game</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .game-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 200px;
+      border: 2px solid #333;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    #dino {
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      img{
+        width: 60px;
+        height: 60px;
+        margin-top: -18px;
+      }
+    }
+
+    #cactus {
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+      width: 20px;
+      height: 40px;
+      background-color: green;
+      animation: moveCactus 2s linear infinite;
+    }
+
+    @keyframes moveCactus {
+      0% {
+        right: -50px;
+      }
+      100% {
+        right: 100%;
+      }
+    }
+
+    .jump {
+      animation: jump 0.5s linear;
+    }
+
+    @keyframes jump {
+      0% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 100px;
+      }
+      100% {
+        bottom: 0;
+      }
+    }
+
+    /* Mobile controls */
+    .controls {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .jump-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .controls {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <div id="dino"><img src="/WhatsApp Şəkil 2025-02-24 saat 23.48.54_714d1304.jpg" alt=""></div>
+    <div id="cactus"></div>
+  </div>
+  <div class="controls">
+    <button class="jump-button" onclick="jump()">Jump</button>
+  </div>
+
+  <script>
+    const dino = document.getElementById("dino");
+    const cactus = document.getElementById("cactus");
+
+    // Keyboard controls
+    document.addEventListener("keydown", function(event) {
+      if (event.code === "Space") {
+        jump();
+      }
+    });
+
+    // Touch controls
+    document.addEventListener("touchstart", function(event) {
+      jump();
+    });
+
+    function jump() {
+      if (dino.classList != "jump") {
+        dino.classList.add("jump");
+
+        setTimeout(function() {
+          dino.classList.remove("jump");
+        }, 500);
+      }
+    }
+
+    let isAlive = setInterval(function() {
+      // Get current dino Y position
+      let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+
+      // Get current cactus X position
+      let cactusLeft = parseInt(
+        window.getComputedStyle(cactus).getPropertyValue("left")
+      );
+
+      // Detect collision
+      if (cactusLeft < 90 && cactusLeft > 50 && dinoTop >= 140) {
+        alert("Game Over!");
+      }
+    }, 10);
+  </script>
+</body>
+</html>
