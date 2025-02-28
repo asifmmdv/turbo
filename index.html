@@ -16,6 +16,9 @@
         -webkit-appearance: none;
         margin: 0;
         }
+        .custom-shadow {
+            box-shadow: 0 17px 34px 0 rgba(44, 39, 56, 0.1), 0 8px 17px 0 rgba(44, 39, 56, 0.05);
+        }
     </style>
 </head>
 <body>
@@ -27,7 +30,7 @@
                 <span class="hover:text-[rgb(202,16,22)]">Boss.az</span>
             </div>
             <div class="flex flex-row gap-[25px] cursor-pointer headertopright">
-                <span class="text-black cursor-pointer hover:text-[rgb(202,16,22)]"><span class="text-black cursor-default">Dəstək: </span>(012) 526-47-47</span>
+                <span class="text-black"><span class="text-black cursor-default">Dəstək: </span><span class=" cursor-pointer hover:text-[rgb(202,16,22)]">(012) 526-47-47</span></span>
                 <span class="hover:text-[rgb(202,16,22)]">Yardım</span>
                 <span class="hover:text-[rgb(202,16,22)]">RU</span>
                 <span class="hover:text-[rgb(202,16,22)] flex items-center gap-[7px]"><i class="fa-solid fa-heart text-lg"></i> Seçilmişlər</span>
@@ -154,5 +157,13 @@
             </div>
         </div>    
     </header>
+    <main>
+        <div class="flex w-[1010px] items-center mx-auto px-[20px] h-[60px] border-t border-b border-[#eaebf2] bg-[rgb(246,247,250)] text-[#212c3a] text-[16px] font-bold">
+            PREMIUM ELANLAR
+        </div>
+        <section class="flex w-[1010px] mx-auto px-[20px] flex-wrap gap-[18px] py-[30px]">
+        </section>
+    </main>  
+    <script src="/data.js"></script>
 </body>
 </html>
