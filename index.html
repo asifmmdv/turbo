@@ -19,6 +19,17 @@
         .custom-shadow {
             box-shadow: 0 17px 34px 0 rgba(44, 39, 56, 0.1), 0 8px 17px 0 rgba(44, 39, 56, 0.05);
         }
+        .dropdowncontent{
+            position: absolute;
+            top:54px;
+        }
+        .dropdown{
+            position: relative;
+        }
+        .dropdowncontent.open {
+            max-height: 333px; 
+            opacity: 1; 
+        }
     </style>
 </head>
 <body>
@@ -61,12 +72,31 @@
             <div class="flex flex-col w-[1010px] mx-auto h-[219px] px-[20px] justify-center gap-[15px] bg-[rgb(235,237,243)]">
                 <div class="flex flex-row items-center gap-[10px]  ">
                     <div class="flex flex-col gap-[10px] ">
-                            <div class="flex items-center justify-between h-[48px] w-[235px] bg-white text-[15px]  border-[1px] border-gray-300 rounded-[7px] p-[8px] cursor-pointer">
-                            <div class="text-[#8d94ad]  mt-[2.5px]">Marka</div>
-                            <svg class="ml-2 w-6 h-6 text-[#8d94ad]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                            </div>   
+                        <div class="flex flex-col dropdown">
+                            <div class="flex items-center justify-between h-[48px] w-[235px] bg-white text-[15px] border-[1px] border-gray-300 rounded-[7px] p-[8px] cursor-pointer relative" onclick="opn()">
+                                <div class="text-[#8d94ad] mt-[2.5px]">Marka</div>
+                                <svg class="ml-2 w-6 h-6 text-[#8d94ad] transition-all duration-300" id="rot1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <div class="dropdowncontent flex-col bg-white text-[15px] max-h-0 opacity-0 transition-all duration-300 ease-out overflow-y-auto rounded-[7px] py-[9px] w-[235px] shadow-lg cursor-pointer">
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)] flex items-center gap-[8px]"><i class="fa-solid fa-x text-[red] text-[14px]"></i><span class="text-[#212c3a]">Sıfırla</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)] "><span class="text-[#212c3a]">Abarth</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Audi</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Toyota</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Ford</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Bestune</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Honggi</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Kia</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Chevrolet</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Jaguar</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Mercedes</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">C.Moto</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Tayota</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Porsche</span></div>
+                                <div class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]"><span class="text-[#212c3a]">Paz</span></div>
+                            </div>
+                        </div>
                         <div class="flex flex-row">
                             <input type="number" class="h-[46px] w-[118px] outline-[grey] bg-white text-[15px] rounded-tl-[7px] border-r-0 rounded-bl-[7px] border-[1px] p-[8px] border-gray-300 placeholder-[#8d94ad]" placeholder="Qiymət, min.">
                             <input type="number" class="h-[46px] w-[117px] outline-[grey] bg-white text-[15px] rounded-tr-[7px] rounded-br-[7px]  border-[1px] p-[8px] border-gray-300 placeholder-[#8d94ad]" placeholder="maks.">

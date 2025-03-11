@@ -1,4 +1,3 @@
-
         const carData = [
             {
                 brand: "Abarth",
@@ -881,3 +880,17 @@
         }
 
         window.onload = renderCarArticles;
+
+
+        const dropdowncontent = document.querySelector('.dropdowncontent')
+        const rot1 = document.querySelector('#rot1')
+        let status1 = false
+        function opn(){
+            dropdowncontent.classList.toggle('open');
+            status1 =!status1
+            if (status1){
+            rot1.style.transform = 'rotate(180deg)'}
+            else {
+                rot1.style.transform = 'rotate(0deg)'
+            }
+        }
