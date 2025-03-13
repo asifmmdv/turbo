@@ -1029,13 +1029,18 @@ let data = [
         const rot7 = document.querySelector('#rot7');
         let status7 = false;
 
+
+
+        const sortedIlArr = ilArr.slice();
         function opn7() {
             dropdowncontent7.classList.toggle('open7');
             status7 = !status7;
             const maksItems = dropdowncontent7.querySelectorAll('#maks');
             maksItems.forEach(item => item.remove());
+            
             if (status7) {
-                ilArr.sort((a, b) => b - a).map(item => dropdowncontent7.innerHTML += `
+                const sortedIlArr = [...ilArr]; 
+                sortedIlArr.sort((a, b) => b - a).map(item => dropdowncontent7.innerHTML += `
                     <div id="maks" name="year" onclick="handleSelect(this)" class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]">
                         <span class="text-[#212c3a]">${item}</span>
                     </div>
