@@ -2510,4 +2510,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   syntax: "*";
   inherits: false;
 }
-@property --tw-co
+@property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
