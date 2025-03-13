@@ -1,1 +1,92 @@
 @import "tailwindcss";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246,247,250);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.custom-shadow {
+    box-shadow: 0 17px 34px 0 rgba(44, 39, 56, 0.1), 0 8px 17px 0 rgba(44, 39, 56, 0.05);
+}
+.dropdowncontent{
+    position: absolute;
+    top:54px;
+}
+.dropdown{
+    position: relative;
+}
+.dropdowncontent.open {
+    max-height: 333px; 
+    opacity: 1; 
+}
+.dropdowncontent2{
+    position: absolute;
+    top:54px;
+}
+.dropdown2{
+    position: relative;
+}
+.dropdowncontent2.open2 {
+    max-height: 333px; 
+    opacity: 1; 
+}
+.dropdowncontent3{
+    position: absolute;
+    top:54px;
+}
+.dropdown3{
+    position: relative;
+}
+.dropdowncontent3.open3 {
+    max-height: 333px; 
+    opacity: 1; 
+}
+.dropdowncontent4{
+    position: absolute;
+    top:54px;
+}
+.dropdown4{
+    position: relative;
+}
+.dropdowncontent4.open4 {
+    max-height: 333px; 
+    opacity: 1; 
+}
+.dropdowncontent5{
+    position: absolute;
+    top:54px;
+}
+.dropdown5{
+    position: relative;
+}
+.dropdowncontent5.open5 {
+    max-height: 130px; 
+    opacity: 1; 
+    overflow-y: hidden;
+}
+.dropdowncontent6{
+    position: absolute;
+    top:54px;
+}
+.dropdown6{
+    position: relative;
+}
+.dropdowncontent6.open6 {
+    max-height: 333px; 
+    opacity: 1; 
+}
+.dropdowncontent7{
+    position: absolute;
+    top:54px;
+}
+.dropdown7{
+    position: relative;
+}
+.dropdowncontent7.open7 {
+    max-height: 333px; 
+    opacity: 1; 
+}
