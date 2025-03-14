@@ -229,8 +229,13 @@ function opn() {
       show();
   }
   
-  function reset(){
+  function resetAll(){
       closeAllDropdowns()
+      data = zapaz;  
+      show();
+  }
+
+  function reset(){
       data = zapaz;  
       show();
   }
