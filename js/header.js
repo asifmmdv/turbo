@@ -101,24 +101,24 @@ function opn() {
   let status5 = false;
 
   function opn5() {
-      closeAllDropdowns(4)
-      dropdowncontent5.classList.toggle('open5');
-      status5 = !status5;
-      dropdowncontent5.innerHTML = '';
-      if (status5) {
-          const uniqueValArr5 = [...new Set(valArr)];
-          uniqueValArr5.forEach(item => {
-              dropdowncontent5.innerHTML += `
-                  <div id="val" name="val" onclick="handleSelect(this)" class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]">
-                      <span class="text-[#212c3a]">${item}</span>
-                  </div>
-              `;
-          });
-          rot5.style.transform = 'rotate(180deg)';
-      } else {
-          rot5.style.transform = 'rotate(0deg)';
-      }
-  }
+    closeAllDropdowns(4);
+    dropdowncontent5.classList.toggle('open5');
+    status5 = !status5;
+    dropdowncontent5.innerHTML = '';
+    if (status5) {
+        const uniqueValArr5 = [...new Set(valArr)];
+        uniqueValArr5.forEach(item => {
+            dropdowncontent5.innerHTML += `
+                <div id="val" name="currency" onclick="handleSelect(this)" class="py-[9px] px-[23px] pl-[10px] hover:bg-[rgb(246,247,250)]">
+                    <span class="text-[#212c3a]">${item}</span>
+                </div>
+            `;
+        });
+        rot5.style.transform = 'rotate(180deg)';
+    } else {
+        rot5.style.transform = 'rotate(0deg)';
+    }
+}
 
   const dropdowncontent6 = document.querySelector('.dropdowncontent6');
   const rot6 = document.querySelector('#rot6');
@@ -239,3 +239,5 @@ function opn() {
       data = zapaz;  
       show();
   }
+
+  
