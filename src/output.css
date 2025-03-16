@@ -258,6 +258,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-100 {
+    z-index: 100;
+  }
   .z-1000 {
     z-index: 1000;
   }
@@ -1704,9 +1707,6 @@
   .text-\[\#212c3a\] {
     color: #212c3a;
   }
-  .text-\[\#c41818\] {
-    color: #c41818;
-  }
   .text-\[red\] {
     color: red;
   }
@@ -1715,9 +1715,6 @@
   }
   .text-\[rgb\(202\,16\,22\)\] {
     color: rgb(202,16,22);
-  }
-  .text-\[white\] {
-    color: white;
   }
   .text-black {
     color: var(--color-black);

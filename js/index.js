@@ -13,7 +13,7 @@ const marka = document.getElementById('marka');
           articles.innerHTML += `
                 <article class="flex flex-col w-[229px] h-[265.75px] rounded-[7px] overflow-hidden shadow-xl">
                     <div class="h-[180px] rounded-t-[8px] overflow-hidden relative">
-                      <i onclick="addToBasket(${item.id})" class="fa-regular  fa-heart text-${item.status ? '[red]': 'white'} text-[24px] absolute right-[10px] top-[10px]"></i>
+                      <i onclick="addToBasket(${item.id})" class="fa-regular  fa-heart text-${item.status ? '[red]': 'white'} text-[24px] absolute right-[10px] top-[10px] cursor-pointer"></i>
                       <img class="h-[170.75px] w-[229px] bg-center bg-cover" src="${item.images[0]}" alt="avto" />
                     </div>
                     <div class="px-[10px] pt-[7px] h-[95px] flex flex-col leading-[18px]">
