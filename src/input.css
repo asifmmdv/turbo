@@ -90,7 +90,7 @@ margin: 0;
     max-height: 333px; 
     opacity: 1; 
 }
-/* #chosencars{
+ #chosencars{
     opacity: 1;
     transition: 1s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
@@ -102,4 +102,4 @@ margin: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
 }
-*/
+

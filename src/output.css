@@ -243,12 +243,6 @@
   .top-\[10px\] {
     top: 10px;
   }
-  .top-\[50px\] {
-    top: 50px;
-  }
-  .top-\[60px\] {
-    top: 60px;
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -387,6 +381,9 @@
   .mt-\[2\.5px\] {
     margin-top: 2.5px;
   }
+  .mt-\[16px\] {
+    margin-top: 16px;
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -486,9 +483,6 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
-  .h-\[10px\] {
-    height: 10px;
-  }
   .h-\[15px\] {
     height: 15px;
   }
@@ -519,9 +513,6 @@
   .h-\[100\%\] {
     height: 100%;
   }
-  .h-\[110px\] {
-    height: 110px;
-  }
   .h-\[140px\] {
     height: 140px;
   }
@@ -537,12 +528,6 @@
   .h-\[265\.75px\] {
     height: 265.75px;
   }
-  .h-\[500px\] {
-    height: 500px;
-  }
-  .h-\[1000px\] {
-    height: 1000px;
-  }
   .h-screen {
     height: 100vh;
   }
@@ -557,9 +542,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -614,9 +596,6 @@
   }
   .w-\[510px\] {
     width: 510px;
-  }
-  .w-\[777px\] {
-    width: 777px;
   }
   .w-\[1010px\] {
     width: 1010px;
@@ -1043,6 +1022,9 @@
   .gap-\[18px\] {
     gap: 18px;
   }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
   .gap-\[25px\] {
     gap: 25px;
   }
@@ -1317,32 +1299,17 @@
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
-  .bg-\[red\] {
-    background-color: red;
-  }
   .bg-\[rgb\(126\,211\,33\)\] {
     background-color: rgb(126,211,33);
   }
-  .bg-\[rgb\(168\,169\,173\)\] {
-    background-color: rgb(168,169,173);
-  }
-  .bg-\[rgb\(188\,190\,193\)\] {
-    background-color: rgb(188,190,193);
-  }
   .bg-\[rgb\(202\,16\,22\)\] {
     background-color: rgb(202,16,22);
-  }
-  .bg-\[rgb\(215\,216\,220\)\] {
-    background-color: rgb(215,216,220);
   }
   .bg-\[rgb\(235\,237\,243\)\] {
     background-color: rgb(235,237,243);
   }
   .bg-\[rgb\(246\,247\,250\)\] {
     background-color: rgb(246,247,250);
-  }
-  .bg-\[rgba\(235\,237\,243\,0\.56\)\] {
-    background-color: rgba(235,237,243,0.56);
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
@@ -1527,6 +1494,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-\[5px\] {
+    padding: 5px;
   }
   .p-\[8px\] {
     padding: 8px;
@@ -2342,6 +2312,16 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 .dropdowncontent7.open7 {
   max-height: 333px;
   opacity: 1;
+}
+#chosencars {
+  opacity: 1;
+  transition: 1s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}
+#chosencars.openc {
+  opacity: 1;
+  max-height: 900px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 @property --tw-translate-x {
   syntax: "*";
