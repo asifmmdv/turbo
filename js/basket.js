@@ -42,9 +42,9 @@ function showBasket() {
                 <div id="carprice" class="bg-[rgb(202,16,22)] text-white">${carPrice} ${item.currency}</div>  
             </div>
             <div class="h-[30%] shadow-2xl flex flex-col justify-center gap-1">
-                <button onclick="basketCount(${item.id}, -1)" class="border-[1px] text-[rgb(202,16,22)] cursor-pointer border-[#dfe3e7] w-[25px] h-[25px] rounded-[5px] mx-[5px]">-</button>
+                <button onclick="basketCount(${item.id}, -1)" class="border-[1px] text-[rgb(202,16,22)] cursor-pointer border-[#dfe3e7]  rounded-[5px] mx-[5px]">-</button>
                 <span class="text-[rgb(202,16,22)]" id="num">${item.count}</span>
-                <button onclick="basketCount(${item.id}, 1)" class="border-[1px] border-[#dfe3e7] w-[25px] cursor-pointer h-[25px] text-[rgb(202,16,22)] rounded-[5px] mx-[5px]">+</button>
+                <button onclick="basketCount(${item.id}, 1)" class="border-[1px] border-[#dfe3e7] w-[40px] h-[40px] cursor-pointer  text-[rgb(202,16,22)] rounded-[5px] mx-[5px]">+</button>
             </div>
             <i onclick="basketdenSil(${item.id})" class="fa-solid fa-trash cursor-pointer text-2xl text-[rgb(202,16,22)] mr-2"></i>
         </article>
