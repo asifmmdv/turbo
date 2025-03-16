@@ -234,10 +234,9 @@ function opn() {
       data = zapaz;  
       show();
   }
-
+  
   function reset(){
       data = zapaz;  
       show();
-  }
+    }
 
-  

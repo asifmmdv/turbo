@@ -90,3 +90,16 @@ margin: 0;
     max-height: 333px; 
     opacity: 1; 
 }
+/* #chosencars{
+    opacity: 1;
+    transition: 1s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+
+}
+#chosencars.openc {
+    opacity: 1;
+    max-height: 900px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+*/
