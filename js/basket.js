@@ -30,8 +30,8 @@ function showBasket() {
 
         likedDiv.innerHTML += `
         <article class="w-[95%] h-[140px] text-center m-4 overflow-hidden shadow-2xl border-[rgb(202,16,22)] flex border-[1px] flex-row items-center rounded-[8px]" id="x${i}">
-            <div class="max-w-[40%] h-[100%] overflow-hidden">
-                <img class="h-[100%] object-cover" src="${item.images[0]}" alt="avto" />
+            <div class="w-[40%]  h-[100%] overflow-hidden">
+                <img class="h-[100%] w-[100%] object-cover" src="${item.images[0]}" alt="avto" />
             </div>
             <div class="w-[60%] bg-white p-2 h-[140px]">
                 <h2 class="font-bold">${item.price} ${item.currency}</h2>
@@ -64,10 +64,10 @@ function basketdenSil(id) {
     return carPrice
 }
 
+
 function addToBasket(id) {
     const element = data.find(item => item.id == id)
     element.status = true
-
     const yoxla = basket.find(elem => elem.id == id)
     if (yoxla == undefined) {
         element.count = 1
